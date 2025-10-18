@@ -18,7 +18,9 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 img, picture, video, canvas, svg {
@@ -44,4 +46,17 @@ h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
     isolation: isolate;
+}
+
+.leftside {
+    background-image: url("./gymbackground.jpg");
+    background-size: cover;
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+    filter: brightness(70%);
+}
+
+.rightside {
+
 }
