@@ -6,6 +6,7 @@
 
 * {
     margin: 0;
+    border: 1px solid red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -83,7 +84,6 @@ h1, h2, h3, h4, h5, h6 {
 .rightside {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
     margin-top: 8rem;
     gap: 2rem;
 }
@@ -93,5 +93,64 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 1rem;
     font-weight: 700;
-    font-size: 18px
+    font-size: 18px;
+    margin: 2rem;
+}
+
+form {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form>fieldset {
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    gap: 1rem;
+}
+
+fieldset>p {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.names, .contact, .pass {
+    display: flex;
+    flex-direction: row;    
+    gap: 3rem;
+}
+
+.firstname, .lastname, .email, .phonenumber, .password, .confirmpass {
+    width: clamp(25%, 30%, 35%);
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+.bottomform {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+form>div>button {
+    width: 200px;
+    border: none;
+    background-color: #596D48;
+    border-radius: 6px;
+    box-shadow: 0 0 2px black;
+    font-size: 18px;
+    color: white;
+    padding: 8px;
+    font-weight: 700;
 }

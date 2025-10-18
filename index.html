@@ -22,27 +22,45 @@
         </div>
         <form action="/example.com/path" method="post">
             <fieldset>
-                <legend>Let's do this!</legend>
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" id="firstname" name="firstname">
-
-                <label for="lastname">LAST NAME</label>
-                <input type="text" id="lastname" name="lastname">
-                <br>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
+                <p>Let's do this!</p>
+                <div class="names">
+                    <div class="firstname">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div class="lastname">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                </div>
+               
+                <div class="contact">
+                    <div class="email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="phonenumber">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input type="tel" id="phonenumber" name="phonenumber">
+                    </div>
+                </div>
                 
-                <label for="phonenumber">PHONE NUMBER</label>
-                <input type="tel" id="phonenumber" name="phonenumber">
-                <br>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
-
-                <label for="confirmpass">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmpass" name="confirmpass">
+                <div class="pass">
+                    <div class="password">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="confirmpass">
+                        <label for="confirmpass">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmpass" name="confirmpass">
+                    </div>
+                </div>
             </fieldset>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="/" noreferrer>Log In</a></p>
+            <div class="bottomform">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="/" noreferrer>Log In</a></p>
+            </div>
         </form>
     </div>
 </body>
