@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("./gymbackground.jpg");
     background-size: cover;
     flex: 1;
-    min-width: 200px;
+    min-width: 400px;
     max-width: 400px;
     filter: brightness(70%);
 }
