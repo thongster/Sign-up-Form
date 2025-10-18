@@ -6,7 +6,7 @@
 
 * {
     margin: 0;
-    border: 1px solid red;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,7 +22,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-
 }
 
 img, picture, video, canvas, svg {
@@ -53,9 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .leftside {
     background-image: url("./gymbackground.jpg");
     background-size: cover;
-    flex: 1;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 40%;
     filter: brightness(70%);
 }
 
@@ -84,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .rightside {
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
+    margin-top: 6rem;
     gap: 2rem;
 }
 
@@ -98,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 form {
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -141,6 +138,7 @@ input, label {
     flex-direction: column;
     margin-left: 2rem;
     gap: 1rem;
+    font-size: 14px;
 }
 
 form>div>button {
@@ -153,4 +151,17 @@ form>div>button {
     color: white;
     padding: 8px;
     font-weight: 700;
+}
+
+a {
+    color: #596D48;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: blue;
+    box-shadow: 0 1 1px black;
 }
